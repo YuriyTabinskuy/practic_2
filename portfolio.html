@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <style>
+           .portfolio {
+    padding-top: 96px;
+  }
+  
+  .portfolio-btn {
+    padding: 12px 24px;
+  
+    background-color: var(--light-background-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    line-height: 1.5;
+    color: var(--primary-brand-color);
+    /* font-weight: 600; */
+  }
+  
+  .btn-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+  
+  .btn-list .item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+
+  
+  .portfolio-btn:active {
+    background-color: var(--active-btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+  .portfolio-btn:current {
+    background: var(--primary-brand-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio-list-item:not(:nth-child(3n)) {
+    margin-right: 24px;
+  }
+  
+  .portfolio-list-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 48px;
+  }
+  
+  .portfolio-list-item:hover,
+  .portfolio-list-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+  
+  .portfolio-list .card-content {
+    padding-left: 16px;
+    border: 0.5px solid var(--light-background-color);
+  }
+  
+  .portfolio-list a {
+    color: var(--main-text-color);
+  }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="/"><span class="accent">WEB</span>STUDIO</a>
+        <ul class="nav-list list">
+          <li><a href="./index.html">Studio</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li><a href="/">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <ul class="contacts list">
+        <li><a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="phone" href="tel:+11(000)111-11-11">+11 (000) 111-11-11</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section>
+        <h1>Portfolio</h1>
+        <ul class="list">
+          <li><button class="btn portfolio-btn" type="button">All</button></li>
+          <li><button class="btn portfolio-btn" type="button">Web Site</button></li>
+          <li><button class="btn portfolio-btn" type="button">App</button></li>
+          <li><button class="btn portfolio-btn" type="button">Design</button></li>
+          <li><button class="btn portfolio-btn" type="button">Marketing</button></li>
+        </ul>
+        <ul class="portfolio-list list">
+          <li class="portfolio-list-item" box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);>
+            <a href="/">
+              <img width="360" height="300" src="./images/portbanking.jpg" alt="Bank app" />
+              <h2 class="project-title">Banking App Interface Concept</h2>
+              <p class="project-description">App</p>
+            </a>
+          </li>
+          <li class="portfolio-list-item" box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);>
+            <a href="/">
+              <img width="360" height="300" src="./images/portpayment.jpg" alt="Payment by phone" />
+              <h2 class="project-title">Cashless Payment</h2>
+              <p class="project-description">Marketing</p>
+            </a>
+          </li>
+          <li class="portfolio-list-item" box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);>
+            <a href="/">
+              <img
+                width="360"
+                height="300"
+                src="./images/portmeditaion.jpg"
+                alt="Meditation app on screen MacBook and iPhone"
+              />
+              <h2 class="project-title">Meditation App</h2>
+              <p class="project-description">App</p>
+            </a>
+          </li>
+          <li class="portfolio-list-item" box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);>
+            <a href="/">
+              <img width="360" height="300" src="./images/porttaxi.jpg" alt="Car inside" />
+              <h2 class="project-title">Taxi Service</h2>
+              <p class="project-description">Marketing</p>
+            </a>
+          </li>
+          <li class="portfolio-list-item" box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);>
+            <a href="/">
+              <img width="360" height="300" src="./images/portillustrations.jpg" alt="Beautiful wallpaper" />
+              <h2 class="project-title">Screen Illustrations</h2>
+              <p class="project-description">Design</p>
+            </a>
+          </li>
+          <li class="portfolio-list-item" box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);>
+            <a href="/">
+              <img
+                width="360"
+                height="300"
+                src="./images/portcourses.jpg"
+                alt="Girl in headphones listens to online courses"
+              />
+              <h2 class="project-title">Online Courses</h2>
+              <p class="project-description">Marketing</p>
+            </a>
+          </li>
+          <li class="portfolio-list-item" box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);>
+            <a href="/">
+              <img
+                width="360"
+                height="300"
+                src="./images/portinstagram.jpg"
+                alt="Instagram Stories Concept"
+              />
+              <h2 class="project-title">Instagram Stories Concept</h2>
+              <p class="project-description">Design</p>
+            </a>
+          </li>
+          <li class="portfolio-list-item" box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);>
+            <a href="/">
+              <img width="360" height="300" src="./images/portfood.jpg" alt="Organic Food" />
+              <h2 class="project-title">Organic Food</h2>
+              <p class="project-description">Web Site</p>
+            </a>
+          </li>
+          <li class="portfolio-list-item" box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);>
+            <a href="/">
+              <img width="360" height="300" src="./images/portcoffee.jpg" alt="Fresh Coffee" />
+              <h2 class="project-title">Fresh Coffee</h2>
+              <p class="project-description">Web Site</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <a class="logo footer-logo" href="/"><span class="accent">Web</span>Studio</a>
+      <p class="footer-description">
+        Increase the flow of customers and sales for your business with digital marketing & growth
+        solutions.
+      </p>
+    </footer>
+  </body>
+</html>
